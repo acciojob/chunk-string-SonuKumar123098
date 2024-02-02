@@ -3,7 +3,7 @@ function stringChop(str, size) {
 	if(str==null) return [];
 	const res=[];
 	let i;
-	for i=0;i<=str.length-size;){
+	for i=0;i<str.length-size;){
 		res.push(str.splice(i,i+size));
 		i+=size;
 	}
